@@ -8,15 +8,15 @@ export default {
             user: 'root',
             password: 'root',
             database: 'db_picinguaba'
-        }
-    },
+        },
 
-    migrations: {
-        tableName: 'knex_migrations',
-        directory: path.resolve(__dirname, 'src', 'database', 'migrations'),
-    },
+        migrations: {
+            tableName: 'knex_migrations',
+            directory: path.resolve(__dirname, 'src', 'database', 'migrations'),
+        },
 
-    seeds: {
-        directory: path.resolve(__dirname, 'src', 'database', 'seeds'),
-    },
+        seeds: {
+            directory: path.resolve(__dirname, 'src', 'database', 'seeds'),
+        },
+    }
 };
