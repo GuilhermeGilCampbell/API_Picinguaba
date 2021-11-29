@@ -6,19 +6,19 @@ export default {
         const {nome,descricao} = req.body;
         const data = {nome,descricao};
 
-        await knex('tab_categorias').insert(data);
+        await knex('tab_categoria').insert(data);
 
         return res.status(201).json({data:data});
     },
 
     async list(req: Request, res: Response) {
-        const result = await knex('tab_categorias').orderBy('id');
+        const result = await knex('tab_categoria').orderBy('id');
         return res.status(200).json({data:result});
     },
 
     async find(req: Request, res: Response) {
         const { id } = req.params;
-        const result = await knex('tab_categorias').where({id});
+        const result = await knex('tab_categoria').where({id});
         return res.status(200).json({result});
     },
 
@@ -27,15 +27,15 @@ export default {
         const {nome, descricao} = req.body;
         const data = {nome,descricao};
 
-        await knex('tab_categorias').update(data).where({id });
-        const cat = await knex ('tab_categorias').where({id});
+        await knex('tab_categoria').update(data).where({id });
+        const cat = await knex ('tab_categoria').where({id});
 
         return res.status(200).json({data:cat});
     },
 
     async delete(req: Request, res: Response) {
         const {id} = req.params;
-        await knex ('tab_categorias').delete().where({id})
+        await knex ('tab_categoria').delete().where({id})
         return res.status(200).json({message: 'Categoria excluida com sucesso'});
     }
 }
