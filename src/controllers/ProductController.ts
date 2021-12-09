@@ -9,7 +9,7 @@ export default {
         await knex('tab_produto').insert(data);
 
         return res.status(201).json({data:data});
-    }
+    },
 
     // async list(req: Request, res: Response) {
     //     const result = await knex('tab_produto').orderBy('id');
@@ -22,16 +22,16 @@ export default {
     //     return res.status(200).json({result});
     // },
 
-    // async update(req: Request, res: Response) {
-    //     const {id} = req.params;
-    //     const {nome, descricao} = req.body;
-    //     const data = {nome,descricao};
+     async update(req: Request, res: Response) {
+         const {id} = req.params;
+         const {nome,id_categoria,descricao,preco,destaque,longitude,latitude,mostrar_mapa,mostrar_contato,id_contato} = req.body;
+         const data = {nome,id_categoria,descricao,preco,destaque,longitude,latitude,mostrar_mapa,mostrar_contato,id_contato};
 
-    //     await knex('tab_produto').update(data).where({id });
-    //     const cat = await knex ('tab_produto').where({id});
+         await knex('tab_produto').update(data).where({id});
+         const produto = await knex ('tab_produto').where({id});
 
-    //     return res.status(200).json({data:cat});
-    // },
+         return res.status(200).json({data:produto});
+     },
 
     // async delete(req: Request, res: Response) {
     //     const {id} = req.params;
