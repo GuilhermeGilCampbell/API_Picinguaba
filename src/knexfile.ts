@@ -4,10 +4,10 @@ export default {
     development: {
         client: 'mysql2',
         connection: {
-            host: 'localhost',
-            user: 'root',
-            password: '',
-            database: 'db_picinguaba'
+            host: 'us-cdbr-east-05.cleardb.net',
+            user: 'b3babbb07c6360',
+            password: '6ea10041',
+            database: 'heroku_1cdcfa94b61336d'
         },
 
         migrations: {
