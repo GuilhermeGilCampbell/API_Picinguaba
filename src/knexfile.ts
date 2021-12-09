@@ -6,7 +6,7 @@ export default {
         connection: {
             host: 'localhost',
             user: 'root',
-            password: 'root',
+            password: '',
             database: 'db_picinguaba'
         },
 

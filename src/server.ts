@@ -1,20 +1,22 @@
-import express, {application, request} from "express"
+import express from "express";
 import routes from "./routes";
-
+import cors from "cors";
+import swaggerUi from "swagger-ui-express";
+import swaggerDoc from "./swagger.json";
 
 const api = express();
+const PORT = process.env.PORT || 3000;
 
-
-// Node transforms our machine in a web server. We must listen to the port 3000
-api.listen(3000,()=>console.log("Servidor inicializado na porta 3000"));
-
-// The requests will use JSON format
+api.use(cors());
 api.use(express.json());
+api.use("/v1", routes);
+api.use("/", swaggerUi.serve, swaggerUi.setup(swaggerDoc));
 
-// API REST threated and correctly sent to the right controllers
-api.use(routes);
+api.listen(PORT, () => {
+  console.log(`Servidor inicializado na url  http://localhost:${PORT}`);
+});
 
 //API basic test with GET
-api.get("/",(req,res)=>{
+api.get("/v1",(req,res)=>{
     return res.json({mensage: "Picinguaba awaits"})
 })
