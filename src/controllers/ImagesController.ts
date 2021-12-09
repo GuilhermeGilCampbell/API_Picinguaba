@@ -4,9 +4,9 @@ import knex from "@/database/connection";
 export default {
   async create(req: Request, res: Response) {
     try {
-      const categoria = req.body;
-      await knex("tab_categoria").insert(categoria);
-      return res.status(201).json({message: "Categoria cadastrada com sucesso"});
+      const imagem = req.body;
+      await knex("tab_imagem").insert(imagem);
+      return res.status(201).json({message: "Imagem cadastrada com sucesso"});
     } catch (error) {
       return res.status(500).json({
         message: `Erro inesperado no servidor! ${error}`,
@@ -16,8 +16,8 @@ export default {
 
   async list(req: Request, res: Response) {
     try {
-      const categorias = await knex("tab_categoria").orderBy("id");
-      return res.status(200).json({data: categorias});
+      const imagens = await knex("tab_imagem").orderBy("id");
+      return res.status(200).json({data: imagens});
     } catch (error) {
       return res.status(500).json({
         message: `Erro inesperado no servidor! ${error}`,
@@ -28,8 +28,8 @@ export default {
   async find(req: Request, res: Response) {
     try {
       const { id } = req.params;
-      const categoria = await knex("tab_categoria").where({ id });
-      return res.status(200).json({data: categoria});
+      const imagem = await knex("tab_imagem").where({ id });
+      return res.status(200).json({data: imagem});
     } catch (error) {
       return res.status(500).json({
         message: `Erro inesperado no servidor! ${error}`,
@@ -41,8 +41,8 @@ export default {
     try {
       const { id, nome } = req.body;
       const data = { nome };
-      await knex("tab_categoria").update(data).where({ id_categoria: id });
-      return res.status(200).json({ message: "Categoria atualizada com sucesso" });
+      await knex("tab_imagem").update(data).where({ id_imagem: id });
+      return res.status(200).json({ message: "Imagem atualizada com sucesso" });
     } catch (error) {
       return res.status(500).json({
         message: `Erro inesperado no servidor! ${error}`,
@@ -53,8 +53,8 @@ export default {
   async delete(req: Request, res: Response) {
     try {
       const { id } = req.params;
-      await knex("tab_categoria").delete().where({ id });
-      return res.status(200).json({ message: "Categoria excluida com sucesso" });
+      await knex("tab_imagem").delete().where({ id });
+      return res.status(200).json({ message: "Imagem excluida com sucesso" });
     } catch (error) {
       return res.status(500).json({
         message: `Erro inesperado no servidor! ${error}`,
