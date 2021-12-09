@@ -29,6 +29,7 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-fileupload": "^1.2.1",
+    "file-type": "^17.0.0",
     "knex": "^0.95.14",
     "mysql2": "^2.3.3",
     "path": "^0.12.7",
