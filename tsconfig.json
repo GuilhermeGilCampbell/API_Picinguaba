@@ -8,5 +8,10 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,
+<<<<<<< HEAD
   }
 }
+=======
+  },
+}
+>>>>>>> d4b4731c744f207e1e32a805321a01601795126f
