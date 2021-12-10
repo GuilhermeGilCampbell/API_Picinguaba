@@ -1,8 +1,8 @@
 import { Router } from "express";
-import ProductController from "@/controllers/ProductController";
-import CategoryController from "@/controllers/CategoryController";
-import ContactController from "@/controllers/ContactController";
-import ImagesController from "@/controllers/ImagesController";
+import ProductController from "./controllers/ProductController";
+import CategoryController from "./controllers/CategoryController";
+import ContactController from "./controllers/ContactController";
+import ImagesController from "./controllers/ImagesController";
 
 const routes = Router();
 

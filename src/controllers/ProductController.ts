@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import knex from "@/database/connection";
+import knex from "../database/connection";
 
 export default {
   async create(request: Request, response: Response) {
