@@ -14,7 +14,6 @@ export async function up(knex: Knex): Promise<void> {
         table.foreign('id_contato').references('id').inTable('tab_contato');
         table.boolean('mostrar_contato').notNullable();
     });
-    
 }
 
 export async function down(knex: Knex): Promise<void> {

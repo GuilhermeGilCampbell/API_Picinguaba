@@ -409,121 +409,17 @@
           }
         }
       }
-    },
-    "/imagens": {
-      "post": {
-        "tags": ["imagens"],
-        "summary": "Adiciona uma nova imagem",
-        "description": "Adiciona uma nova imagem na base de dados",
-        "operationId": "adicionaImagem",
-        "produces": ["application/json"],
-        "responses": {
-          "200": {
-            "description": "Imagem criada com sucesso",
-            "schema": {
-              "type": "array",
-              "items": {
-                "$ref": "#/definitions/Imagens"
-              }
-            }
-          },
-          "500": {
-            "description": "Erro interno no servidor"
-          }
-        }
-      },
-      "get": {
-        "tags": ["imagens"],
-        "summary": "Busca todas as imagens",
-        "description": "Busca todoas as de imagens existentes na base de dados",
-        "operationId": "buscaImagem",
-        "produces": ["application/json"],
-        "responses": {
-          "200": {
-            "description": "Imagens retornadas com sucesso",
-            "schema": {
-              "type": "array",
-              "items": {
-                "$ref": "#/definitions/Imagens"
-              }
-            }
-          },
-          "500": {
-            "description": "Erro interno no servidor"
-          }
-        }
-      }
-    },
-    "/imagens/{Id}": {
-      "put": {
-        "tags": ["imagens"],
-        "summary": "Modifica uma imagem pelo Id",
-        "description": "Modifica uma imagem de acordo com o parametro inserido na URL",
-        "operationId": "modificaImagem",
-        "produces": ["application/json"],
-        "parameters": [
-          {
-            "name": "imagemId",
-            "in": "path",
-            "description": "ID da imagem no banco de dados",
-            "required": true,
-            "type": "integer",
-            "format": "int64"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Imagem modificada com sucesso",
-            "schema": {
-              "$ref": "#/definitions/Imagens"
-            }
-          },
-          "404": {
-            "description": "Imagem não encontrada"
-          },
-          "500": {
-            "description": "Erro interno no servidor"
-          }
-        }
-      },
-      "delete": {
-        "tags": ["imagens"],
-        "summary": "Exlcui as imagens pelo Id",
-        "description": "Exclui uma imagem de acordo com o parametro inserido na URL",
-        "operationId": "excluiImagem",
-        "produces": ["application/json"],
-        "parameters": [
-          {
-            "name": "imagemId",
-            "in": "path",
-            "description": "ID da imagem no banco de dados",
-            "required": true,
-            "type": "integer",
-            "format": "int64"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Imagem excluida com sucesso",
-            "schema": {
-              "$ref": "#/definitions/Imagens"
-            }
-          },
-          "404": {
-            "description": "Imagem não encontrada"
-          },
-          "500": {
-            "description": "Erro interno no servidor"
-          }
-        }
-      }
     }
   },
+
   "definitions": {
     "Produtos": {
       "type": "object",
       "properties": {
         "id": {
+          "type": "integer"
+        },
+        "id_categoria": {
           "type": "integer"
         },
         "nome": {
@@ -539,22 +435,13 @@
         "destaque": {
           "type": "integer"
         },
-        "longitude": {
+        "imagem": {
           "type": "string"
-        },
-        "latitude": {
-          "type": "string"
-        },
-        "mostrar_mapa": {
-          "type": "integer"
         },
         "id_contato": {
           "type": "integer"
         },
         "mostrar_contato": {
-          "type": "integer"
-        },
-        "id_categoria": {
           "type": "integer"
         }
       }
@@ -563,10 +450,12 @@
       "type": "object",
       "properties": {
         "id_categoria": {
-          "type": "integer",
-          "format": "int64"
+          "type": "integer"
         },
         "nome_categoria": {
+          "type": "string"
+        },
+        "descricao": {
           "type": "string"
         }
       }
@@ -575,8 +464,7 @@
       "type": "object",
       "properties": {
         "id": {
-          "type": "integer",
-          "format": "int64"
+          "type": "integer"
         },
         "nome": {
           "type": "string"
@@ -588,25 +476,6 @@
           "type": "string"
         },
         "email": {
-          "type": "string"
-        }
-      }
-    },
-    "Imagens": {
-      "type": "object",
-      "properties": {
-        "id": {
-          "type": "integer",
-          "format": "int64"
-        },
-        "id_produto": {
-          "type": "integer",
-          "format": "int64"
-        },
-        "descricao": {
-          "type": "string"
-        },
-        "img": {
           "type": "string"
         }
       }
