@@ -5,6 +5,7 @@ export async function up(knex: Knex): Promise<void> {
     return await knex.schema.createTable('tab_categoria', (table) => {
         table.increments('id_categoria',{primaryKey: true}).unique();
         table.specificType('nome_categoria','VARCHAR(25)').notNullable().unique();
+        table.text('descricao');
     });
 }
 
