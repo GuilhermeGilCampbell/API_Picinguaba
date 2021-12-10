@@ -13,7 +13,7 @@ api.use("/v1", routes);
 api.use("/", swaggerUi.serve, swaggerUi.setup(swaggerDoc));
 
 api.listen(PORT, () => {
-  console.log(`Servidor inicializado na url  http://localhost:${PORT}`);
+  console.log(`Servidor inicializado na url http://localhost:${PORT}`);
 });
 
 //API basic test with GET
