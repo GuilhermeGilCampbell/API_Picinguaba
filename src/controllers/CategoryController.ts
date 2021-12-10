@@ -16,7 +16,7 @@ export default {
 
   async list(req: Request, res: Response) {
     try {
-      const categorias = await knex("tab_categoria").orderBy("id");
+      const categorias = await knex("tab_categoria").orderBy("id_categoria");
       return res.status(200).json({data: categorias});
     } catch (error) {
       return res.status(500).json({
@@ -28,7 +28,7 @@ export default {
   async find(req: Request, res: Response) {
     try {
       const { id } = req.params;
-      const categoria = await knex("tab_categoria").where({ id });
+      const categoria = await knex("tab_categoria").where({ id_categoria: id});
       return res.status(200).json({data: categoria});
     } catch (error) {
       return res.status(500).json({
