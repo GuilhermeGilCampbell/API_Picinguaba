@@ -3,7 +3,7 @@ import { Knex } from "knex";
 export async function up(knex: Knex): Promise<void> {
     return await knex.schema.createTable('tab_produto', (table) => {
         table.increments('id',{primaryKey: true}).unique();
-        table.specificType('nome','VARCHAR(25)').notNullable();
+        table.specificType('nome','VARCHAR(50)').notNullable();
         table.text('descricao').notNullable();
         table.double('preco');
         table.boolean('destaque').notNullable();
