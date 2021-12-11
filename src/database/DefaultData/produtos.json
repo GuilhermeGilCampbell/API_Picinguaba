@@ -53,5 +53,35 @@
         "imagem":           "",
         "mostrar_contato":  0
 
+    },
+
+    {
+        "id_categoria" :	4,
+        "nome" :            "ILHA DAS COUVES",
+        "descricao":        "Disparadamente a melhor resposta para quem pergunta o que fazer na ilha das couves é: mergulhar!\n Ela é um aquário natural com abundante vida marinha e constante atividade.\nLeve equipamento básico de mergulho, se não possuir, alugue máscara e snorkel no Emporium Picinguaba.",
+        "destaque":         1,
+        "imagem":           "",
+        "mostrar_contato":  0
+
+    },
+
+    {
+        "id_categoria" :	4,
+        "nome" :            "ESPORTES NÁUTICOS",
+        "descricao":        "A locação de esportes náuticos \"Emporium Picinguaba\" está localizada no centro de Picinguaba, contando com uma equipe licenciada pela prefeitura e equipada com todos os itens de segurança, caiaques e pranchas.\nVenha desfrutar do lazer unido ao esporte com qualidade,segurança e se relacionar com uma natureza esplêndida!",
+        "destaque":         1,
+        "imagem":           "",
+        "mostrar_contato":  0
+
+    },
+
+    {
+        "id_categoria" :	4,
+        "nome" :            "PRAIA DA FAZENDA",
+        "descricao":        "Sede do Parque Estadual da Serra do Mar－Núcleo Picinguaba, a Praia da Fazenda é um dos redutos à beira-mar mais bem preservados do Litoral Norte de São Paulo. Com longa faixa de areia escura e compacta, mar muito calmo e cercada por montanhas verdejantes, a Praia da Fazenda oferece visual bem distinto da grande maioria de Ubatuba. São mais de 3 km de praia totalmente preservada e sem nenhuma construção para atrapalhar o cenário. Acredite, ali está um paraíso de preservação. Aproveite o lugar para a praticar esportes na areia (que além de longa é bem larga) e também para curtir algumas remadas de SUP.",
+        "destaque":         1,
+        "imagem":           "",
+        "mostrar_contato":  0
+
     }
 ]}

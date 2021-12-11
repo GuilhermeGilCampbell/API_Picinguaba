@@ -13,7 +13,7 @@ export default {
     async insertProducts(data: any) {
         try {
             await knex("tab_produto").insert(data);
-            console.log('produtos adicionados adicionadas');
+            console.log('produtos adicionados');
         } catch (error) {
             console.log(error);
         };
@@ -22,7 +22,7 @@ export default {
     async insertContacts(data: any) {
         try {
             await knex("tab_contato").insert(data);
-            console.log('produtos adicionados adicionadas');
+            console.log('contatos adicionados');
         } catch (error) {
             console.log(error);
         };

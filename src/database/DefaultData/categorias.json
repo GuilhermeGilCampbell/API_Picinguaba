@@ -10,5 +10,9 @@
     {
         "nome_categoria" :	"Eventos",
         "descricao" :	"Eventos para curtir em Picinguaba"
+    },
+    {
+        "nome_categoria" :	"Roteiros",
+        "descricao" :	"O que fazer em Picinguaba"
     }
 ]}
