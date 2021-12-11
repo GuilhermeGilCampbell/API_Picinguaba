@@ -1,0 +1,14 @@
+{"data":[
+    {
+        "nome_categoria" :	"Restaurantes",
+        "descricao" :	"Restaurantes locais de Picinguaba"
+    },
+    {
+        "nome_categoria" :	"Acomodação",
+        "descricao" :	"Acomodações em Picinguaba"
+    },
+    {
+        "nome_categoria" :	"Eventos",
+        "descricao" :	"Eventos para curtir em Picinguaba"
+    }
+]}

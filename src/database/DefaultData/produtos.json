@@ -1,0 +1,57 @@
+{"data":[
+    {
+        "id_categoria" :	1,
+        "nome" :            "PETISCOS BEIRA MAR",
+        "descricao":        "No desprentesioso Petiscos Beira Mar, a simpatissísima Eli, cozinheira de mão cheia, serve receitas de praia deliciosas. \"Tudo bem simples, com poucos ingredientes\" disse ela. Comida fresca, na qual os peixes e frutos do mar recém-pescados brilham.",
+        "destaque":         1,
+        "imagem":           "",
+        "mostrar_contato":  0
+
+    },
+    {
+        "id_categoria" :	1,
+        "nome" :            "SOBRE AS ONDAS",
+        "descricao":        "Ambiente Familiar e com um delicioso e impecável sabor caiçara. Na beira da Praia de Picinguaba",
+        "destaque":         1,
+        "imagem":           "",
+        "mostrar_contato":  0
+    },
+    {
+        "id_categoria" :	1,
+        "nome" :            "PICIMBAR",
+        "descricao":        "Deliciosos pratos com Frutos do Mar e um dos restaurantes mais antigos da Vila.",
+        "destaque":         1,
+        "imagem":           "",
+        "mostrar_contato":  0
+    },
+
+    {
+        "id_categoria" :	2,
+        "nome" :            "POUSADA PICINGUABA",
+        "descricao":        "Na Pousada Picinguaba preservamos a tranquilidade com apenas 9 acomodações duplas ou individuais e 1 suíte com banheira e vista privilegiada. Nossos quartos não possuem televisão, telefone ou internet, e possuem varanda privativa para observar o mar e a floresta no balanço tranquilo de uma rede. Em alguns quartos existe a possibilidade de incluir uma cama extra.",
+        "destaque":         1,
+        "imagem":           "",
+        "mostrar_contato":  0
+
+    },
+
+    {
+        "id_categoria" :	3,
+        "nome" :            "CORRIDA DE CANOA",
+        "descricao":        "A tradicional corrida de canoa caiçara acontece no proximo dia 15/12, seguindo a tradicao e mantendo viva a memoria ancestral contida em cada movimento. Para alem da competicao e premiacao, o bem maior que se cultiva atraves desse evento é o valor em reconhecer que muita historia e muitas maos foram precisas para que hoje pudessemos usufruir desse meio de transporte, que ate pouco tempo era meio de sobrevivencia.",
+        "destaque":         1,
+        "imagem":           "",
+        "mostrar_contato":  0
+
+    },
+
+    {
+        "id_categoria" :	3,
+        "nome" :            "FESTA DO BRANCO",
+        "descricao":        "É chegada a hora de celebrar!\n\nA festa do Branco é o prenúncio do novo ano que se aproxima! A vontade é genuína, de reciclar e recriar historias.\nA comunidade toda engajada em preparar o clima necessário para que a festa contagie ate quem nao sabe dançar. Momento de liberar!\nSoltar a energia estagnada, abrir espaço pro novo!\nDia 31/12 aqui na Picinguaba.",
+        "destaque":         1,
+        "imagem":           "",
+        "mostrar_contato":  0
+
+    }
+]}

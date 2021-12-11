@@ -5,7 +5,7 @@ export async function up(knex: Knex): Promise<void> {
         table.increments('id',{primaryKey: true}).unique();
         table.integer('id_categoria').unsigned();
         table.foreign('id_categoria').references('id_categoria').inTable('tab_categoria');
-        table.specificType('nome','VARCHAR(50)').notNullable();
+        table.specificType('nome','VARCHAR(50)').notNullable().unique();
         table.text('descricao').notNullable();
         table.double('preco');
         table.boolean('destaque').defaultTo(0);
