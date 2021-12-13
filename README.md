@@ -22,9 +22,9 @@ In this project the following technologies, languages, and libraries were used:
 
 # Database  
 
-The database structure was conceived after talking with the UX team about what would be displayed on the website. After some iterations the final desig is as it follows.
+The database structure was conceived after talking with the UX team about what would be displayed on the website. After some iterations, the final design is as follows.
 
-![Database structure containing three tables with conections through foreign keys](images\DB_Tables.png?raw=true "Database Structure")
+![Database structure containing three tables with connections through foreign keys](images\DB_Tables.png?raw=true "Database Structure")
 
 
 ## Using Knex  
@@ -43,7 +43,7 @@ The folder /src/database holds the migration files, responsible for the creation
 
 To make the datadump for the initial set of information, JSON files were created with the categories and products followed by the coding of the necessary controllers and function calls.  
   
-Now we are able to input all the initial data throught a single terminal command instead of needing to insert then one-by-one using the API or the MySQL Workbench.  
+Now we are able to input all the initial data through a single terminal command instead of needing to insert them one-by-one using the API or the MySQL Workbench.  
   
   
 # API REST
