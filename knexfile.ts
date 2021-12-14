@@ -1,7 +1,6 @@
 import path from "path";
 
 export default {
-
   deploy: {
     client: "mysql2",
     connection: {
@@ -21,7 +20,6 @@ export default {
     },
   },
 
-
   development: {
     client: "mysql2",
     connection: {
@@ -40,5 +38,5 @@ export default {
     seeds: {
       directory: path.resolve(__dirname, "src", "database", "seeds"),
     },
-  }
+  },
 };

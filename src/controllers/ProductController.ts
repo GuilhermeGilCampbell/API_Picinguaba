@@ -17,7 +17,7 @@ export default {
   async list(request: Request, response: Response) {
     try {
       const produtos = await knex("tab_produto").join("tab_categoria", "tab_produto.id_categoria", "tab_categoria.id_categoria");
-      return response.status(200).json({data: produtos});
+      return response.status(200).json(produtos);
     } catch (error) {
       return response.status(404).json({
         message: `Erro inesperado no servidor! ${error}`,
@@ -29,7 +29,7 @@ export default {
     try {
       const { id } = request.params;
       const produto = await knex("tab_produto").where({ id });
-      return response.status(200).json({data: produto});
+      return response.status(200).json(produto);
     } catch (error) {
       return response.status(404).json({
         message: `Erro inesperado no servidor! ${error}`,
@@ -41,7 +41,7 @@ export default {
     try {
       const { id } = request.params;
       const produtos = await knex("tab_produto").where({ id_categoria: id });
-      return response.status(200).json({data: produtos});
+      return response.status(200).json(produtos);
     } catch (error) {
       return response.status(404).json({
         message: `Erro inesperado no servidor! ${error}`,

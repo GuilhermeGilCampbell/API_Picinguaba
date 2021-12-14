@@ -17,7 +17,7 @@ export default {
   async list(req: Request, res: Response) {
     try {
       const contatos = await knex("tab_contato").orderBy("id");
-      return res.status(200).json({data: contatos});
+      return res.status(200).json(contatos);
     } catch (error) {
       return res.status(500).json({
         message: `Erro inesperado no servidor! ${error}`,
@@ -29,7 +29,7 @@ export default {
     try {
       const { id } = req.params;
       const contato = await knex("tab_contato").where({ id });
-      return res.status(200).json({data: contato});
+      return res.status(200).json(contato);
     } catch (error) {
       return res.status(500).json({
         message: `Erro inesperado no servidor! ${error}`,
