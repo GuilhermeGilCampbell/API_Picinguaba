@@ -60,3 +60,56 @@ We used "Swagger" to create a page to showcase what is possible to do with the A
 ![Possible requests to interact with each table](images\Swagger_requests.PNG?raw=true "Possible requests")
 ![JSON Templates](images\Swagger_models.PNG?raw=true "JSON Tempaltes")
 
+
+# Execution  
+  
+### To run the application first install the modules
+
+```
+yarn install
+```
+  
+### Adjust the knexfile.js to direct to the desired database
+
+```
+ connection: {
+      host: "localhost",
+      user: "your_user_here",
+      password: "your_password_here",
+      database: "your_database_here",
+      port: 3306,
+    },
+```
+
+### Create the tables
+```
+knex migrate:latest
+```
+
+### Start server
+```
+yarn dev
+```
+  
+  
+## Desenvelopers<br>
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/micheldslive">
+        <img src="https://avatars.githubusercontent.com/u/55795597?v=4" width="100" alt="Foto no GitHub"/><br>
+        <sub>
+          <b>Michel Domingos</b>
+        </sub>
+      </a>
+    </td>
+        <td align="center">
+      <a href="https://github.com/GuilhermeGilCampbell">
+        <img src="https://avatars.githubusercontent.com/u/30280649?v=4" width="100" alt="Foto no GitHub"/><br>
+        <sub>
+          <b>Guilherme Campbell</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
