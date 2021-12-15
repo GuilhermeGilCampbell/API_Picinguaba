@@ -24,7 +24,7 @@ In this project the following technologies, languages, and libraries were used:
 
 The database structure was conceived after talking with the UX team about what would be displayed on the website. After some iterations, the final design is as follows.
 
-![Database structure containing three tables with connections through foreign keys](images\DB_Tables.png?raw=true "Database Structure")
+![Database structure containing three tables with connections through foreign keys](/images/DB_Tables.png?raw=true "Database Structure")
 
 
 ## Using Knex  
@@ -36,7 +36,7 @@ The "knexfile.ts" file holds the information to tell knex where to find the desi
 The folder /src/database holds the migration files, responsible for the creation and configuration of the tables, as well as the connection.ts, responsible for calling the knexfile.ts.  
   
   
-![MySQL print to show created tables in the required database](images\DB_MySql_print.PNG?raw=true "Created tables")
+![MySQL print to show created tables in the required database](/images/DB_MySql_print.PNG "Created tables")  
 
 
 ## Writing the initial information  
@@ -57,8 +57,8 @@ For the creation of the API we used the node module "Express". With it we are ab
   
 We used "Swagger" to create a page to showcase what is possible to do with the API. In it it is shown which requests are possible as well as JSON templates.
 
-![Possible requests to interact with each table](images\Swagger_requests.PNG?raw=true "Possible requests")
-![JSON Templates](images\Swagger_models.PNG?raw=true "JSON Tempaltes")
+![Possible requests to interact with each table](images/Swagger_requests.PNG?raw=true "Possible requests")
+![JSON Templates](images/Swagger_models.PNG?raw=true "JSON Tempaltes")
 
 
 # Execution  
