@@ -8,6 +8,8 @@ Create the necessary infrastructure for the storage and collection of data of a 
 - the creation of an API capable of sending, collecting, and updating data;
 - the creation of a webpage to showcase the API's capabilities.
 
+# <a href="https://github.com/GuilhermeGilCampbell/API_Picinguaba/blob/main/SprintPlanning.md">SprintPlanning</a>
+
 # Tecnologies implemented  
 
 In this project the following technologies, languages, and libraries were used:
